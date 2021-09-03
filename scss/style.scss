@@ -1,0 +1,70 @@
+menu{
+    width: 400px;
+    margin: 0 auto 20px;
+    a{
+        display: inline-block;
+        text-decoration: none;
+        background: linear-gradient(to bottom, white, black);
+        color: white;
+        width: 150px;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+}
+#table_users{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(175px, 1fr));
+    div{
+        text-align: center;
+    }
+    .del{
+        display: block;
+        text-decoration: none;
+        color: black;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+form{
+    #add_users{
+        text-align: center;
+        background: rgba(3, 20, 56, 0.705);
+        padding: 20px;
+        label{
+            color: white;
+        }
+        input[type="text"], input[type="password"]{
+            border-radius: 5px;
+            border: none;
+            color: black;
+            padding-left: 5px;
+            padding-right: 5px;
+            background: rgba(255,255,250,0.6);
+            outline: none;
+        }
+        input[type="text"]{
+            margin-bottom: 5px;
+        }
+    }
+    input[type="submit"]{
+        width: 140px;
+        color:  #445162;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-left: 45%;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: rgba(57, 144, 216, 0.61);
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background: rgba(83, 55, 114, 0.5);
+        }
+    }
+}
