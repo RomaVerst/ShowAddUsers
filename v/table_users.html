@@ -1,0 +1,18 @@
+<main>
+    {% if table == null %}
+    <p>В таблице пока нет пользователей</p>
+    {% else %}
+    <div id="table_users">
+        <div><strong>Логин</strong></div>
+        <div><strong>Имя</strong></div>
+        <div><strong>Удалить пользователя</strong></div>
+        {% for user in table %}
+            <div>{{ user.login }}</div>
+            <div>{{ user.name }}</div>
+            <div>
+                <a class="del" href="index.php?act=del_users&id={{ user.id }}">✖</a>
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</main>
